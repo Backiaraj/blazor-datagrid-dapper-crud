@@ -26,7 +26,7 @@ This project showcases best practices for building interactive data management a
 - [Visual Studio Code](https://code.visualstudio.com/)
 - **SQL Server** 2016 or later (Express edition supported)
 
-### Setup Instructions
+## Getting Started
 
 1. **Clone the repository**
 
