@@ -1,32 +1,93 @@
-# Blazor DataGrid CRUD application using Dapper
+# Blazor DataGrid CRUD Application
 
-This sample was created to depict DataGrid CRUD operation in SQL server database using Dapper in a Blazor server-side application.
+A comprehensive example demonstrating how to build a full-stack Blazor CRUD application with real-time datagrid operations using [Dapper](https://github.com/DapperLib/Dapper) ORM and SQL Server. This repository contains multiple implementations across different .NET versions.
+
+## Overview
+
+This project showcases best practices for building interactive data management applications in Blazor with:
+
+- **Server-side CRUD operations** against a SQL Server database
+- **Real-time datagrid** with sorting, filtering, and inline editing
+- **Type-safe data access** using Dapper ORM
+- **Multiple framework versions** supporting .NET 5, .NET 6, and .NET 8
+
+### Features
+
+- **CRUD Operations** - Create, Read, Update, and Delete bug records
+- **DataGrid** - Interactive table with real-time updates
+- **Type-Safe Data Access** - Dapper with strongly-typed entities
+- **Responsive UI** - Bootstrap-based responsive design
+- **Data Validation** - Server-side validation for data integrity
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
-* [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK 5.0](https://dotnet.microsoft.com/download/dotnet/5.0) or [.NET SDK 6.0](https://dotnet.microsoft.com/download/dotnet/6.0) or [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
+- [Visual Studio Code](https://code.visualstudio.com/)
+- **SQL Server** 2016 or later (Express edition supported)
 
-## Install
+### Setup Instructions
 
-* Create a database named **BugTracker** on your SQL server, and run scripts in **SQL script** directory to create a **Bugs** table.
-* Edit `appsettings.json` to set the database connection in the `BugTrackerDatabase` property.
+1. **Clone the repository**
 
-## How to run the project
+   ```bash
+   git clone https://github.com/SyncfusionExamples/blazor-datagrid-dapper-crud.git
+   cd blazor-datagrid-dapper-crud
+   ```
 
-1. Clone or download this repository to a location in your system.
-2. Open the solution file using the Visual Studio or Visual Studio code.
-3. Restore the NuGet packages by rebuilding the solution or run `dotnet restore`.
-4. Build the project to ensure there are no compilation errors.
-5. Run the project.
+2. **Create the database**
 
-Optional CLI Commands:
+   - Open SQL Server Management Studio (or your preferred SQL client)
+   - Execute the script in `SQL Script/bug-table.sql` to create the **BugTracker** database and **Bugs** table
+   
+   Alternatively, use PowerShell:
+   ```powershell
+   sqlcmd -S <ServerName> -i "SQL Script\bug-table.sql"
+   ```
 
-```powershell
-dotnet restore
-dotnet build
-```
+3. **Configure the connection string**
 
-## Blog Reference
+   Edit the connection string in `appsettings.json` under the `BugTrackerDatabase` property:
+   ```json
+   {
+     "ConnectionStrings": {
+       "BugTrackerDatabase": "Server=<YOUR_SERVER>;Database=BugTracker;Trusted_Connection=true;Encrypt=false;"
+     }
+   }
+   ```
+   > Replace `<YOUR_SERVER>` with your SQL Server instance name (e.g., `localhost` or `.`)
 
-* <a href="https://www.syncfusion.com/blogs/post/build-blazor-crud-application-with-dapper.aspx"> How to Build a Blazor CRUD Application with Dapper</a>
+4. **Restore and run**
+
+   Choose your preferred project version:
+
+   **BlazorWebApp (.NET 8 - Recommended)**
+   ```bash
+   cd BlazorWebApp
+   dotnet restore
+   dotnet build
+   dotnet run
+   ```
+
+   **NET6 Version**
+   ```bash
+   cd NET6/Dapper.CRUD
+   dotnet restore
+   dotnet build
+   dotnet run
+   ```
+
+   **NET5 Version**
+   ```bash
+   cd NET5/Dapper.CRUD
+   dotnet restore
+   dotnet build
+   dotnet run
+   ```
+
+
+## Resources
+
+- [Dapper GitHub Repository](https://github.com/DapperLib/Dapper)
+- [SQL Server Documentation](https://learn.microsoft.com/en-us/sql/sql-server)
+- [Blog: Build a Blazor CRUD Application with Dapper](https://www.syncfusion.com/blogs/post/build-blazor-crud-application-with-dapper.aspx)
