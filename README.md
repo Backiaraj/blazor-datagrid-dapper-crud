@@ -2,15 +2,6 @@
 
 A comprehensive example showcasing how to build a full-stack Blazor CRUD application using the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) for rich, real-time data operations, integrated with [Dapper](https://github.com/DapperLib/Dapper) ORM and SQL Server. This repository includes multiple implementations targeting various .NET versions.
 
-## Overview
-
-This project showcases best practices for building interactive data management applications in Blazor with:
-
-- **Server-side CRUD operations** against a SQL Server database
-- **Real-time datagrid** with sorting, filtering, and inline editing
-- **Type-safe data access** using Dapper ORM
-- **Multiple framework versions** supporting .NET 5, .NET 6, and .NET 8
-
 ### Features
 
 - **CRUD Operations** - Create, Read, Update, and Delete bug records
@@ -21,7 +12,7 @@ This project showcases best practices for building interactive data management a
 
 ## Prerequisites
 
-- [.NET SDK 5.0](https://dotnet.microsoft.com/download/dotnet/5.0) or [.NET SDK 6.0](https://dotnet.microsoft.com/download/dotnet/6.0) or [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
 - [Visual Studio Code](https://code.visualstudio.com/)
 - **SQL Server** 2016 or later (Express edition supported)
@@ -59,9 +50,6 @@ This project showcases best practices for building interactive data management a
 
 4. **Restore and run**
 
-   Choose your preferred project version:
-
-   **BlazorWebApp (.NET 8 - Recommended)**
    ```bash
    cd BlazorWebApp
    dotnet restore
@@ -69,25 +57,8 @@ This project showcases best practices for building interactive data management a
    dotnet run
    ```
 
-   **NET6 Version**
-   ```bash
-   cd NET6/Dapper.CRUD
-   dotnet restore
-   dotnet build
-   dotnet run
-   ```
+## References
 
-   **NET5 Version**
-   ```bash
-   cd NET5/Dapper.CRUD
-   dotnet restore
-   dotnet build
-   dotnet run
-   ```
-
-
-## Resources
-
-- [Dapper GitHub Repository](https://github.com/DapperLib/Dapper)
-- [SQL Server Documentation](https://learn.microsoft.com/en-us/sql/sql-server)
+- [Dapper GitHub reference link](https://github.com/DapperLib/Dapper)
+- [SQL Server documentation](https://learn.microsoft.com/en-us/sql/sql-server)
 - [Blog: Build a Blazor CRUD Application with Dapper](https://www.syncfusion.com/blogs/post/build-blazor-crud-application-with-dapper.aspx)
