@@ -1,6 +1,6 @@
 # Blazor DataGrid CRUD Application
 
-A comprehensive example demonstrating how to build a full-stack Blazor CRUD application with real-time datagrid operations using [Dapper](https://github.com/DapperLib/Dapper) ORM and SQL Server. This repository contains multiple implementations across different .NET versions.
+A comprehensive example showcasing how to build a full-stack Blazor CRUD application using the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) for rich, real-time data operations, integrated with [Dapper](https://github.com/DapperLib/Dapper) ORM and SQL Server. This repository includes multiple implementations targeting various .NET versions.
 
 ## Overview
 
